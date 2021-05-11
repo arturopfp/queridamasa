@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 400px;
+  height: 815px;
+  background-image: url("../img/web-banner-movil.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("../img/desktop-banner.jpg");
+    background-size: 55%;
+    background-position: center;
+  }
+}
+
+body .socialmedia-container {
+  position: absolute;
+  bottom: 160px;
+  left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 40px;
+}
+
+@media (min-width: 900px) {
+  body .socialmedia-container {
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 130px;
+    height: auto;
+  }
+}
+
+body .socialmedia-container .ig-logo {
+  width: 30px;
+}
+
+@media (min-width: 900px) {
+  body .socialmedia-container .ig-logo {
+    width: 50px;
+  }
+}
+
+body .socialmedia-container .fb-logo {
+  width: 30px;
+}
+
+@media (min-width: 900px) {
+  body .socialmedia-container .fb-logo {
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

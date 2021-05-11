@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 400px;
+    height: 815px;
+    background-image: url('../img/web-banner-movil.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+    @media(min-width: 900px) {
+        background-image: url('../img/desktop-banner.jpg');
+        background-size: 55%;
+        background-position: center;
+    }
+
+    .socialmedia-container {
+        position: absolute;
+        bottom: 160px;
+        left: 150px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 80px;
+        height: 40px;
+
+        @media(min-width: 900px) {
+            bottom: 5%;
+
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+
+            width: 130px;
+            height: auto;
+
+        }
+
+        .ig-logo {
+            width: 30px;
+
+            @media(min-width: 900px) {
+                width: 50px;
+            }
+        }
+
+        .fb-logo {
+            width: 30px;
+
+            @media(min-width: 900px) {
+                width: 50px;
+            }
+        }
+    }
+}
