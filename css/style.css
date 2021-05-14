@@ -6,70 +6,116 @@
 }
 
 body {
-  width: 400px;
-  height: 815px;
-  background-image: url("../img/web-banner-movil.jpg");
-  background-repeat: no-repeat;
-  background-color: black;
-  background-position: center;
+  font-family: 'Mandali', sans-serif;
   width: 100vw;
   height: 100vh;
+  font-size: 16px;
+  background-color: black;
 }
 
 @media (min-width: 900px) {
   body {
-    background-image: url("../img/desktop-banner.jpg");
-    background-size: 55%;
-    background-position: center;
+    width: 100%;
   }
 }
 
-body .socialmedia-container {
-  position: absolute;
-  bottom: 160px;
-  left: 150px;
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container h1,
+.main-container h3,
+.main-container p {
+  color: white;
+}
+
+.main-container h1 {
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 3px;
+  margin-top: 80px;
+  width: 350px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .main-container h1 {
+    font-size: 2.4rem;
+    width: 45%;
+    line-height: 50px;
+  }
+}
+
+.main-container .logo {
+  width: 60%;
+  margin: 80px 0px 50px 0px;
+}
+
+@media (min-width: 900px) {
+  .main-container .logo {
+    width: 26%;
+  }
+}
+
+.main-container h3 {
+  font-size: 1.2rem;
+  letter-spacing: 8px;
+}
+
+@media (min-width: 900px) {
+  .main-container h3 {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+  }
+}
+
+.main-container p {
+  margin-top: 5px;
+  font-size: .5rem;
+  letter-spacing: 3px;
+}
+
+@media (min-width: 900px) {
+  .main-container p {
+    font-size: .8rem;
+    letter-spacing: 9px;
+  }
+}
+
+.main-container .social-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 80px;
-  height: 40px;
+  margin-top: 20px;
 }
 
 @media (min-width: 900px) {
-  body .socialmedia-container {
-    bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    width: 130px;
-    height: auto;
+  .main-container .social-container {
+    width: 140px;
+    border: 1px solid red;
   }
 }
 
-body .socialmedia-container .ig-logo {
-  width: 30px;
+.main-container .social-container img {
+  width: 70%;
 }
 
 @media (min-width: 900px) {
-  body .socialmedia-container .ig-logo {
-    width: 50px;
-  }
-}
-
-body .socialmedia-container .fb-logo {
-  width: 30px;
-}
-
-@media (min-width: 900px) {
-  body .socialmedia-container .fb-logo {
-    width: 50px;
+  .main-container .social-container img {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
