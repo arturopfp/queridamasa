@@ -5,20 +5,6 @@
           box-sizing: border-box;
 }
 
-body {
-  font-family: 'Mandali', sans-serif;
-  width: 100vw;
-  height: 100vh;
-  font-size: 16px;
-  background-color: black;
-}
-
-@media (min-width: 900px) {
-  body {
-    width: 100%;
-  }
-}
-
 .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,92 +16,114 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
 }
 
-.main-container h1,
-.main-container h3,
-.main-container p {
-  color: white;
+.main-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 340px;
+  margin-top: 10px;
 }
 
-.main-container h1 {
-  font-size: 1rem;
-  line-height: 30px;
-  letter-spacing: 3px;
-  margin-top: 80px;
-  width: 350px;
-  text-align: center;
-}
-
-@media (min-width: 900px) {
-  .main-container h1 {
-    font-size: 2.4rem;
-    width: 45%;
-    line-height: 50px;
-  }
-}
-
-.main-container .logo {
-  width: 60%;
-  margin: 80px 0px 50px 0px;
-}
-
-@media (min-width: 900px) {
-  .main-container .logo {
-    width: 26%;
-  }
-}
-
-.main-container h3 {
-  font-size: 1.2rem;
-  letter-spacing: 8px;
-}
-
-@media (min-width: 900px) {
-  .main-container h3 {
-    font-size: 2.5rem;
-    letter-spacing: 10px;
-  }
-}
-
-.main-container p {
-  margin-top: 5px;
-  font-size: .5rem;
-  letter-spacing: 3px;
-}
-
-@media (min-width: 900px) {
-  .main-container p {
-    font-size: .8rem;
-    letter-spacing: 9px;
-  }
-}
-
-.main-container .social-container {
+.main-container header .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80px;
-  margin-top: 20px;
 }
 
-@media (min-width: 900px) {
-  .main-container .social-container {
-    width: 140px;
-    border: 1px solid red;
-  }
+.main-container header .header-top .logo {
+  font-size: 18px;
+  color: #f5b86e;
 }
 
-.main-container .social-container img {
-  width: 70%;
+.main-container header .header-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
 }
 
-@media (min-width: 900px) {
-  .main-container .social-container img {
-    width: 90%;
-  }
+.main-container header .header-bot .submenu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container header .header-bot p {
+  margin-left: 5px;
+  color: #f5b86e;
+}
+
+.main-container .main-container {
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.main-container .main-container .section-container {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.main-container .main-container .swiper-container {
+  margin-top: 40px;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container .main-container .swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.main-container .main-container .swiper-container .slide1 {
+  background-color: brown;
+}
+
+.main-container .main-container .swiper-container .slide2 {
+  background-color: grey;
+}
+
+.main-container .main-container .swiper-container .slide3 {
+  background-color: #f5b86e;
+}
+
+.main-container .main-container .swiper-container .swiper-button-prev, .main-container .main-container .swiper-container .swiper-button-next {
+  color: white;
+}
+
+.main-container .main-container .scroll-arrow {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
